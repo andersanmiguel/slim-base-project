@@ -1,0 +1,10 @@
+{
+  "require": {
+    "slim/slim": "2.*",
+    "phly/mustache": "*",
+    "illuminate/database": "*"
+  },
+  "autoload": {
+    "classmap": ["app/models", "app/helpers"]
+  }
+}
