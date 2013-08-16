@@ -5,10 +5,11 @@ require '../app/config.php';
 
 $app = new \Slim\Slim(array(
   'view' => 'View',
-  'templates.path' => '../app/views'
+  'templates.path' => '../app/views',
+  'templates.suffix' => 'html',
+  'database_data' => $database_data
 ));
 
-require '../app/conf/post-conf.php';
 require '../app/routes.php';
 
 $app->run();
